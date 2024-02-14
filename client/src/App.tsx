@@ -6,11 +6,13 @@ import { faHeart } from "@fortawesome/free-solid-svg-icons";
 
 const typographyStyle = {
   fontFamily: "Dancing Script",
-  fontWeight: 400,
-  color: "#66001A",
-  paddingX: 0,
+  fontWeight: 600,
+  fontSize: "3.5rem",
+  color: "#00FFFF",
+  backgroundColor: "#C70039",
+  paddingX: 5,
   paddingY: 2,
-  borderRadius: "100px",
+  borderRadius: "120px",
 };
 
 const App: React.FC = () => {
@@ -117,7 +119,8 @@ const App: React.FC = () => {
           sx={{ color: "#66001A", fontWeight: "bolder" }}
           variant="h4"
         >
-          Yay!!! I'm excited to go out with you!
+          You're the most beautiful person I've ever met. I'm honored to be your
+          Valentine 🥰
         </Typography>
         <video
           autoPlay
@@ -135,7 +138,7 @@ const App: React.FC = () => {
         >
           <source
             src={
-              "https://personal-stuff.nyc3.cdn.digitaloceanspaces.com/HappySloth.mp4"
+              "https://personal-stuff.nyc3.cdn.digitaloceanspaces.com/axolotl_happy.mp4"
             }
             type="video/mp4"
           />
@@ -157,12 +160,12 @@ const App: React.FC = () => {
             backgroundColor: "#66001A",
             color: "white",
             "&&:hover": {
-              backgroundColor: "#800020",
+              backgroundColor: "#C70039",
             },
           }}
-          onClick={() => submitOption("Velvet Taco + Mini-golf")}
+          onClick={() => submitOption("Fogo de Chao")}
         >
-          Velvet Taco + Mini-golf
+          Fogo de Chao
         </Button>
         <Button
           sx={{
@@ -174,12 +177,12 @@ const App: React.FC = () => {
             backgroundColor: "#66001A",
             color: "white",
             "&&:hover": {
-              backgroundColor: "#800020",
+              backgroundColor: "#C70039",
             },
           }}
-          onClick={() => submitOption("The Museum of Illusions")}
+          onClick={() => submitOption("Cooks and Soldiers")}
         >
-          The Museum of Illusions
+          Cooks and Soldiers
         </Button>
         <Button
           sx={{
@@ -191,12 +194,12 @@ const App: React.FC = () => {
             backgroundColor: "#66001A",
             color: "white",
             "&&:hover": {
-              backgroundColor: "#800020",
+              backgroundColor: "#C70039",
             },
           }}
-          onClick={() => submitOption("The Museum of Illusions")}
+          onClick={() => submitOption("Augavera Cantina")}
         >
-          Couple's Massage + Champagne
+          Aguavera Cantina (Mexican)
         </Button>
       </Box>
     );
@@ -219,7 +222,7 @@ const App: React.FC = () => {
       <Box mt={3} display={"flex"} justifyContent={"center"}>
         <Box>
           <Typography sx={typographyStyle} variant="h4">
-            Would you like to go on a date with me?
+            Will you be my Valentine?
           </Typography>
           <video
             autoPlay
@@ -237,7 +240,7 @@ const App: React.FC = () => {
           >
             <source
               src={
-                "https://personal-stuff.nyc3.cdn.digitaloceanspaces.com/SlothWithABigHeart.mp4"
+                "https://personal-stuff.nyc3.cdn.digitaloceanspaces.com/axolotl.mp4"
               }
               type="video/mp4"
             />
@@ -248,10 +251,10 @@ const App: React.FC = () => {
               <Button
                 variant="contained"
                 sx={{
-                  backgroundColor: "#66001A",
-                  color: "white",
+                  backgroundColor: "#00FFFF",
+                  color: "black",
                   "&&:hover": {
-                    backgroundColor: "#800020",
+                    backgroundColor: "#C70039",
                   },
                 }}
                 onClick={handleYes}
@@ -263,7 +266,7 @@ const App: React.FC = () => {
             <Box>
               <Button
                 variant="contained"
-                sx={{ backgroundColor: "#35000E" }}
+                sx={{ backgroundColor: "#C70039" }}
                 onClick={handleNoHover}
                 onMouseMove={handleNoHover}
                 onMouseEnter={handleNoHover}

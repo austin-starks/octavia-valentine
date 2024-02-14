@@ -24,7 +24,7 @@ app.post("/api/send-email", async (req, res) => {
       res.status(400).json({ message: "Choice is required" });
     }
 
-    const text = `Chelsea said ${choice}`;
+    const text = `Octavia said ${choice}`;
     if (!process.env.SENDGRID_EMAIL || !process.env.SENDGRID_EMAIL) {
       console.log(
         "Email not sent because SENDGRID_EMAIL or SENDGRID_API_KEY is not set"
@@ -34,7 +34,7 @@ app.post("/api/send-email", async (req, res) => {
     const msg = {
       to: process.env.SENDGRID_EMAIL as string,
       from: process.env.SENDGRID_EMAIL as string,
-      subject: "Chelsea said yes!",
+      subject: "Octavia said yes!",
       text,
     };
     await sgMail.send(msg);

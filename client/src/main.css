@@ -1,19 +1,7 @@
+/* main.css */
 body {
-  background-image: linear-gradient(
-    to right bottom,
-    #800020,
-    #922d3c,
-    #a34c58,
-    #b16874,
-    #be8590,
-    #bb848f,
-    #b9848e,
-    #b6838d,
-    #a4656f,
-    #914752,
-    #7c2935,
-    #66001a
-  );
+  background: rgb(0, 255, 255);
+  background: radial-gradient(circle, rgba(0, 255, 255, 1) 0%, #c70039 100%);
   height: 100vh;
   width: 100vw;
   color: white;
