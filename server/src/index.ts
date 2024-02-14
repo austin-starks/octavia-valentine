@@ -31,13 +31,13 @@ app.post("/api/send-email", async (req, res) => {
       );
       return res.status(200).json({ message: "Email sent successfully" });
     }
-    const msg = {
-      to: process.env.SENDGRID_EMAIL as string,
-      from: process.env.SENDGRID_EMAIL as string,
-      subject: "Octavia said yes!",
-      text,
-    };
-    await sgMail.send(msg);
+    // const msg = {
+    //   to: process.env.SENDGRID_EMAIL as string,
+    //   from: process.env.SENDGRID_EMAIL as string,
+    //   subject: "Octavia said yes!",
+    //   text,
+    // };
+    // await sgMail.send(msg);
     res.status(200).json({ message: "Email sent successfully" });
   } catch (error) {
     console.error(error);
