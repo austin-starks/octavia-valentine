@@ -1,11 +1,11 @@
-# Chelsea Date
+# Octavia Valentine
 
-I want to ask Chelsea out on a date. Her favorite color is bergundy and her favorite animals are sloths.
+I want to ask Octavia out on a date. Her favorite color is cyan and her favorite animals are axolotls.
 
 I used DALL-E to generate the initial images and Runway ML to convert it to a video.
 
 ## External Links
-- [The website is linked here](https://chelseadate.com/) Spoiler Alert: She said yes! 😊
+- [The website is linked here](https://octaviavalentine.com/)
 - [Article about the project](https://medium.com/@austin-starks/how-i-used-ai-to-ask-a-girl-out-on-a-date-she-said-yes-913ae0277b0b) that outlines how images and videos were generated.
 
 ## Dependencies
@@ -14,8 +14,8 @@ I used DALL-E to generate the initial images and Runway ML to convert it to a vi
 ## Installation
 
 1. Clone the repository:
-   `git clone https://github.com/austin-starks/NexusGenAI.git`
-2. Go to the directory: `cd chelsea-date`
+   `git clone https://github.com/austin-starks/octavia-valentine.git`
+2. Go to the directory: `cd octavia-valentine `
 3. Install the dependencies: `npm run build`
 4. Setup the SENDGRID_API_KEY and SENDGRID_EMAIL in a .env file
 
