@@ -25,7 +25,7 @@ app.post("/api/send-email", async (req, res) => {
     }
 
     const text = `Octavia said ${choice}`;
-    if (!process.env.SENDGRID_EMAIL || !process.env.SENDGRID_EMAIL) {
+    if (!process.env.SENDGRID_API_KEY || !process.env.SENDGRID_EMAIL) {
       console.log(
         "Email not sent because SENDGRID_EMAIL or SENDGRID_API_KEY is not set"
       );
